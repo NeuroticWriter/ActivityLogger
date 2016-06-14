@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ActivityLogger</string>
+    <string name="toggleoff">Start Monitoring</string>
+    <string name="toggleon">Stop Monitoring</string>
+</resources>

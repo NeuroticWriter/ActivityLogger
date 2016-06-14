@@ -1,0 +1,36 @@
+package com.internlft.activitylogger;
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.app.usage.UsageStats;
+import android.view.View;
+import android.widget.TextView;
+import android.widget.Toast;
+import android.widget.ToggleButton;
+
+public class MainActivity extends AppCompatActivity {
+   // UsageStats usageStats;
+    //String thisAppName = usageStats.getPackageName();
+    //String timeUsed = Long.toString(usageStats.getTotalTimeInForeground());// Shows total Usage Time
+    //String totalStats = "Name: " + thisAppName+ "Usage Time: " + timeUsed;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+    }
+    public void monitorApp(View view){
+        boolean checkToggle = ((ToggleButton)view).isChecked();
+        if(checkToggle == true){
+            Toast.makeText(getBaseContext(),"Monitoring Started",Toast.LENGTH_SHORT).show();
+        }
+        else {
+            Toast.makeText(getBaseContext(),"Monitoring Stopped",Toast.LENGTH_SHORT).show();
+
+
+
+      //      TextView textView = (TextView)findViewById(R.id.stats);
+        //    textView.setText(thisAppName);
+        }
+    }
+}
